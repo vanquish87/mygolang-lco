@@ -1,0 +1,1 @@
+Yes, almost everything is moved from master to slave.
