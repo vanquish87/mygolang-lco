@@ -16,8 +16,6 @@ func main() {
 	checkNilErr(err)
 	
 	length, err := io.WriteString(file, content)
-
-	writes := os.Wr
 	
 	checkNilErr(err)
 	
@@ -32,8 +30,11 @@ func readFile(filename string)  {
 	databyte , err := ioutil.ReadFile(filename)
 	
 	checkNilErr(err)
-	
+
+	// databyte is like :
+	// [89 101 115 44 32 97 108 109 111 115 116 32 101 118 101 114 121 116 104 105 110 103 32 105 115 32 109 111 118 101 100 32 102 114 111 109 32 109 97 115 116 101 114 32 116 111 32 115 108 97 118 101 46]
 	fmt.Println("Data bytes inside file are: \n", databyte)
+
 	fmt.Println("Text inside file is: \n", string(databyte))
 	
 }
